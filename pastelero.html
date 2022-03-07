@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout y Rutas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #ffffff;
+            padding: 30px;
+            text-align: center;
+            font-size: 30px;
+            color: black;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 50%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 50%;
+            background-color: #F109BE;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+		<img src="https://i.ibb.co/TBk17TP/baker-Mesa-de-trabajo-2.png" alt="baker-Mesa-de-trabajo-2" border="0">
+        <h2>CITY BAKERY</h2>
+    </header>
+
+<section>
+        <nav>
+           <table>
+        <tr>
+            <th>Sabores</th>
+            <th>Restante</th>
+            <th>Toppings</th>
+			<th>Restante</th>
+        </tr>
+        <tr>
+            <td>Chocolate</td>
+            <td>3.00 kilos</td>
+			<td>Chispas</td>
+            <td>2.00 kilos</td>            
+        </tr>
+        <tr>
+            <td>Redvelvet</td>
+            <td>4.00 kilos</td>
+            <td>Betun</td>
+			<td>5.00 kilos</td>
+        </tr>
+		 <tr>
+            <td>Vainilla</td>
+            <td>2.00 lts</td>
+			<td>fondant</td>
+            <td>5.00 kilos</td>            
+        </tr>
+        <tr>
+            <td>Naranja</td>
+            <td>4.00 kilos</td>
+            <td>Glaseado</td>
+			<td>1.00 kilos</td>
+        </tr>
+    </table> 
+        </nav>
+
+        <article>
+              <!-- Tablas -->
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Pedido</th>
+            <th>Sabor</th>
+			<th>Estado</th>
+			<th>Contacto</th>
+			<th>Fecha</th>
+        </tr>
+        <tr>
+            <td>Hugo Ramírez</td>
+            <td>Pastel</td>
+            <td>Redvelvet</td>
+			<td>Pagado</td>
+			<td>5555232355</td>
+			<td>25/05/2022</td>
+        </tr>
+        <tr>
+            <td>Estephania Cruz</td>
+            <td>Pastel</td>
+            <td>Chocolate</td>
+			<td>Anticipo</td>
+			<td>4435656890</td>
+			<td>24/04/2022</td>
+        </tr>
+		 <tr>
+            <td>Melanie Cruz</td>
+            <td>Pastel</td>
+            <td>Naranja</td>
+			<td>Anticipo</td>
+			<td>443545990</td>
+			<td>12/04/2022</td>
+        </tr>
+    </table>
+
+        </article>
+    </section>
+
+    <footer>
+        <p>CITY BAKERY Barcelona Valle Dorado Tlalnepantla Edo Mex 55 2325 6927</p>
+    </footer>
+
+</body>
+
+</html>
